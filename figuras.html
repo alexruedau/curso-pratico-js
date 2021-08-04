@@ -15,9 +15,8 @@
     </header>
 
     <section>
-        <h2>Calcula el área y perímetro de un cuadrado</h2>
-
         <form>
+            <h2>Calcula el área y perímetro de un cuadrado</h2>
             <label for="inputCuadrado">
                 Escribe cuánto mide cada lado del cuadrado:
             </label>
@@ -26,6 +25,29 @@
                 Calcular el perímetro
             </button>
             <button type="button" onclick="calcularAreaCuadrado()">
+                Calcular el área
+            </button>
+
+            <h2>Calcula el área y perímetro de un triángulo</h2>
+            <label for="inputTriangulo1">
+                Escribe cuánto mide el lado A del triángulo:
+            </label>
+            <input type="number" id="inputTriangulo1"/>
+
+            <label for="inputTriangulo2">
+                Escribe cuánto mide el lado B del triángulo:
+            </label>
+            <input type="number" id="inputTriangulo2"/>
+
+            <label for="inputBase">
+                Escribe cuánto mide la base del triángulo:
+            </label>
+            <input type="number" id="inputBase"/>
+            
+            <button type="button" onclick="calcularPerimetroTriangulo()">
+                Calcular el perímetro
+            </button>
+            <button type="button" onclick="calcularAreaTriangulo()">
                 Calcular el área
             </button>
         </form>
