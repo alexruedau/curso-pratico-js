@@ -17,6 +17,8 @@ function calcularPrecioConDescuento(precio, descuento) {
     precioConDescuento
 }); */
 
+
+
 function onClickBotonPrecioDescuento() {
     const inputPrecio = document.getElementById("inputPrecio");
     const precioValue = Number(inputPrecio.value);
@@ -26,6 +28,28 @@ function onClickBotonPrecioDescuento() {
 
     const precioConDescuento = calcularPrecioConDescuento(precioValue, descuentoValue);
 
-    const resultado = document.getElementById("resultadoEnP");
-    resultado.innerText = "El precio con descuento es: " + precioConDescuento;
+    const resultadoEnP = document.getElementById("resultadoEnP");
+    resultadoEnP.innerText = "El precio con descuento es: " + precioConDescuento;
+
+    //Pendiente para hacer luego
+    /* const inputCupon = document.getElementById("inputCupon");
+    const cuponValue = inputCupon.value;
+    
+    const cupones = [
+        {
+            codigo: "cupon1",
+            descuento: 10,
+        },
+        {
+            codigo: "cupon2",
+            descuento: 20,
+        },
+        {
+            codigo: "cupon3",
+            descuento: 30,
+        }
+    ] */
+    
+
+
 }
